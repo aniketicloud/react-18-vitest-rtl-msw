@@ -1,8 +1,12 @@
+import Button from "./components/Button";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <h1>Demo testing application</h1>
+      <Button />
+    </>
+  );
+};
 
-export default App
+export default App;
