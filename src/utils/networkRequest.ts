@@ -1,8 +1,8 @@
-import { jsonplaceholderURL } from "constants/urls";
-import { jsonplaceholderUser } from "types/types";
-
-export const sendNetworkRequest = async (): Promise<jsonplaceholderUser> => {
-  const response = await fetch(jsonplaceholderURL);
-  const user: jsonplaceholderUser = await response.json();
-  return user;
+export const sendNetworkRequest = async <T>(url: string): Promise<T> => {
+  return fetch(url).then((response) => {
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
+    return response.json() as Promise<T>;
+  });
 };
