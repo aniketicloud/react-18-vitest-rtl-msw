@@ -1,5 +1,8 @@
-export const sendNetworkRequest = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
-  const user = await response.json();
-  console.log(user);
+import { jsonplaceholderURL } from "constants/urls";
+import { jsonplaceholderUser } from "types/types";
+
+export const sendNetworkRequest = async (): Promise<jsonplaceholderUser> => {
+  const response = await fetch(jsonplaceholderURL);
+  const user: jsonplaceholderUser = await response.json();
+  return user;
 };
