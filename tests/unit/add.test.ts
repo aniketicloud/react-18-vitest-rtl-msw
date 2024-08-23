@@ -1,5 +1,5 @@
-import { addNumbers } from "$src/utils/add";
 import { expect, test } from "vitest";
+import { addNumbers } from "../../src/utils/add";
 test("should add two numbers", () => {
   const num1 = 1;
   const num2 = 3;
