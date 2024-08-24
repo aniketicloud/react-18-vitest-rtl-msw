@@ -1,5 +1,5 @@
-import { jsonplaceholderURL } from "constants/urls";
-import { jsonPlaceholderTodoMock } from "mocks/data";
+import { jsonplaceholderURL } from "../../constants/urls";
+import { jsonPlaceholderTodoMock } from "../data";
 import { http, HttpResponse } from "msw";
 
 export const handlers = [
