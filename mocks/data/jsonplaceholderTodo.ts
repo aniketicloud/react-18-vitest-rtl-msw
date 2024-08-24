@@ -1,4 +1,4 @@
-import { jsonplaceholderTodo } from "types";
+import { jsonplaceholderTodo } from "../../types";
 
 export const jsonPlaceholderTodoMock: jsonplaceholderTodo = {
   userId: 1,
