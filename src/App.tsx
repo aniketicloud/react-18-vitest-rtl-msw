@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import FetchImage from "./components/FetchImage";
 import FetchTodo from "./components/FetchTodo";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
       <h1>Demo testing application</h1>
       <Button />
       <FetchTodo />
+      <FetchImage />
     </>
   );
 };
